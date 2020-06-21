@@ -8,6 +8,7 @@
 
 import Foundation
 import DKPhotoGallery
+import UIKit
 
 open class DKImageExtensionGallery: DKImageBaseExtension, DKPhotoGalleryDelegate {
     
