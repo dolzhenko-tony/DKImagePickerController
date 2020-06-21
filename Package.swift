@@ -26,6 +26,8 @@ let package = Package(
             name: "DKImagePickerController",
             dependencies: ["DKPhotoGallery"],
             path: "Sources",
-            sources: ["DKImagePickerController","Extensions/DKImageExtensionGallery.swift"])
+            sources: ["DKImagePickerController",
+                      "DKImageDataManager",
+                      "Extensions/DKImageExtensionGallery.swift"])
     ]
 )
