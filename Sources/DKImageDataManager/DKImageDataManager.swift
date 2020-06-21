@@ -7,6 +7,7 @@
 //
 
 import Photos
+import UIKit
 
 public typealias DKImageRequestID = Int32
 public let DKImageInvalidRequestID: DKImageRequestID = 0
