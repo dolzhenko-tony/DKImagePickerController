@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DKImagePickerController",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9)
     ],
@@ -26,8 +27,10 @@ let package = Package(
             name: "DKImagePickerController",
             dependencies: ["DKPhotoGallery"],
             path: "Sources",
+            exclude: ["DKImagePickerController/Info.plist", "DKImagePickerController/Resource/Resources"],
             sources: ["DKImagePickerController",
-                      "DKImageDataManager",
-                      "Extensions/DKImageExtensionGallery.swift"])
+                      "DKImageDataManager",                        
+                      "Extensions/DKImageExtensionGallery.swift"],
+            resources: [.process("DKImagePickerController/Resource/Resources")])
     ]
 )
